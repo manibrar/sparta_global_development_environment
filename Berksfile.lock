@@ -1,0 +1,7 @@
+DEPENDENCIES
+  python
+    git: git@github.com:manibrar/sparta_global_python_recipe.git
+    revision: 9170cef6f122e75a1bdccb1ff500d2a3a4fcd98c
+
+GRAPH
+  python (0.1.0)
