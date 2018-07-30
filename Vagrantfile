@@ -23,12 +23,12 @@ Vagrant.configure("2") do |config|
     # Initialise development environment
     config.vm.provision "shell", inline: <<-SHELL
     echo "Updating virtual machine..."
-    sudo DEBIAN_FRONTEND=noninteractive apt-get update
+    sudo UBUNTU_FRONTEND=noninteractive apt-get update
 
     echo "Installing swift prerequisites..."
     sudo UBUNTU_FRONTEND=noninteractive apt-get install -y libncurses5-dev
 
-    echo "Finished setting up development environment - run 'vagrant ssh' to connect,"
+    echo "Developed by Manvir 'MasterChef' Brar"
     SHELL
   end
 
