@@ -18,6 +18,7 @@ Vagrant.configure("2") do |config|
     # provision with chef
     development.vm.provision "chef_solo" do |chef|
         chef.add_recipe "python::default"
+        chef.add_recipe "nginx::default"
     end
 
     # Initialise development environment
