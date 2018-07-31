@@ -26,6 +26,9 @@ Vagrant.configure("2") do |config|
     echo "Updating virtual machine..."
     sudo UBUNTU_FRONTEND=noninteractive apt-get update
 
+    echo "Installing swift prerequisites..."
+    sudo UBUNTU_FRONTEND=noninteractive apt-get install -y libncurses5-dev
+
     echo "Developed by Manvir 'MasterChef' Brar"
     SHELL
   end
