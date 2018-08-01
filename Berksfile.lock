@@ -1,11 +1,11 @@
 DEPENDENCIES
   nginx
     git: git@github.com:manibrar/sparta_global_nginx_cookbook.git
-    revision: 6d253c2926d110579c51c010c8f688f35c517e8f
+    revision: 9d382f9987608aae3d09062baa9e32233c732542
   python
     git: git@github.com:manibrar/sparta_global_python_recipe.git
-    revision: 1cd5bfae93aace91bdd1a869b42628f97ce206a2
+    revision: ee64e13b113f973eedd8e59e70e6565882be1fea
 
 GRAPH
   nginx (0.1.2)
-  python (0.1.0)
+  python (0.1.1)
