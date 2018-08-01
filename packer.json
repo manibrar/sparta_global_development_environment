@@ -25,17 +25,17 @@
   "provisioners": [
     {
       "type": "shell",
-      "inline": ["mkdir /home/ubuntu/development/Python-Sample-Application"]
+      "inline": ["mkdir /home/ubuntu/development"]
     },
     {
       "type": "file",
-      "source": "development/Python-Sample-Application",
-      "destination": "/home/ubuntu/development/Python-Sample-Application"
+      "source": "development/",
+      "destination": "/home/ubuntu/development"
     },
     {
       "type": "chef-solo",
       "cookbook_paths": ["./cookbooks"],
-      "run_list":["nginx::default", "python::default"]
+      "run_list":["python::default", "nginx::default"]
       }
     ]
   }
