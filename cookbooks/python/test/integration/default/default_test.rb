@@ -29,6 +29,6 @@ describe package 'python-flask' do
   it { should be_installed }
 end
 
-describe package 'libc6-dev' do
+describe package 'libncurses5' do
   it { should be_installed }
 end

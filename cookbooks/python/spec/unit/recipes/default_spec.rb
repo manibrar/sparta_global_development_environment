@@ -41,8 +41,10 @@ describe 'python::default' do
       expect( chef_run ).to install_package('python-flask')
     end
     it 'Should install libc6-dev' do
-      expect( chef_run ).to install_package('libc6-dev')
+      expect( chef_run ).to install_package('libncurses5')
     end
+    it { is_expected.to purge_package('/development/Python-Sample-Application/app.py') }
+
 
   end
 end

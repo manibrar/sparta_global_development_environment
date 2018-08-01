@@ -23,8 +23,6 @@ Vagrant.configure("2") do |config|
 
     # Initialise development environment
     config.vm.provision "shell", inline: <<-SHELL
-    echo "Updating virtual machine..."
-    sudo UBUNTU_FRONTEND=noninteractive apt-get update
 
     echo "Developed by Manvir 'MasterChef' Brar"
     SHELL
