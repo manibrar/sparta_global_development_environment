@@ -4,8 +4,8 @@ DEPENDENCIES
     revision: e67a0f17d5bd33362a8196a9f56b8a274b2aa5c2
   python
     git: git@github.com:manibrar/sparta_global_python_recipe.git
-    revision: 9339929ef0f1effab729f7f4cea3833c69e98922
+    revision: 7bd33e1df024b7491921e33e08892e5bb5c73cee
 
 GRAPH
   nginx (0.1.2)
-  python (0.1.4)
+  python (0.1.5)
