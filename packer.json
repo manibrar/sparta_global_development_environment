@@ -29,8 +29,8 @@
     },
     {
       "type": "file",
-      "source": "development/",
-      "destination": "/home/ubuntu/development"
+      "source": "development/Python-Sample-Application",
+      "destination": "/home/ubuntu/development/Python-Sample-Application"
     },
     {
       "type": "chef-solo",
