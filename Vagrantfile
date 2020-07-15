@@ -1,4 +1,4 @@
-# required_plugins = %w( "vagrant-hostsupdater",  "vagrant-berkshelf" )
+# required_plugins = %w( "vagrant-hostsupdater" )
 # required_plugins.each do |plugin|
 #     exec "vagrant plugin install #{plugin};vagrant #{ARGV.join(" ")}" unless Vagrant.has_plugin? plugin || ARGV[0] == 'plugin'
 # end
@@ -18,17 +18,13 @@ Vagrant.configure("2") do |config|
     # provision with chef
     development.vm.provision "chef_solo" do |chef|
         chef.add_recipe "python::default"
+        chef.add_recipe "nginx::default"
     end
 
     # Initialise development environment
     config.vm.provision "shell", inline: <<-SHELL
-    echo "Updating virtual machine..."
-    sudo DEBIAN_FRONTEND=noninteractive apt-get update
 
-    echo "Installing swift prerequisites..."
-    sudo UBUNTU_FRONTEND=noninteractive apt-get install -y libncurses5-dev
-
-    echo "Finished setting up development environment - run 'vagrant ssh' to connect,"
+    echo "Developed by Manvir 'MasterChef' Brar"
     SHELL
   end
 
